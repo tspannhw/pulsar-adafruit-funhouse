@@ -28,6 +28,7 @@ bin/pulsar-admin topics create persistent://public/default/funhouselightset
 
 bin/pulsar-client consume "persistent://public/default/funhousestate" -s "fhs" -n 0
 
+bin/pulsar-client consume "persistent://public/default/funhouselightstate" -s "fhs2" -n 0
 ````
 
 

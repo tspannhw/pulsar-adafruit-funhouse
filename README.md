@@ -17,6 +17,20 @@ AdaFruit Funhouse publishing Temperature, Humidity and Pressure to MQTT / Apache
 
 * https://learn.adafruit.com/using-the-adafruit-funhouse-with-home-assistant/code-the-sensor
 
+## Apache Pulsar / MQTT Server Setup
+
+````
+bin/pulsar-admin topics create persistent://public/default/funhousestate
+
+bin/pulsar-admin topics create persistent://public/default/funhouselightstate
+
+bin/pulsar-admin topics create persistent://public/default/funhouselightset
+
+bin/pulsar-client consume "persistent://public/default/funhousestate" -s "fhs" -n 0
+
+````
+
+
 ## Example Consuming 
 
 ````
@@ -44,4 +58,25 @@ key:[null], properties:[], content:{"pressure": 1024.91, "button_sel": "off", "p
 ----- got message -----
 key:[null], properties:[], content:{"pressure": 1024.93, "button_sel": "off", "pir_sensor": "off", "humidity": 26.8115, "temperature": 78.1902, "button_down": "off", "captouch6": "off", "captouch7": "off", "button_up": "off", "captouch8": "off", "light": 13365}
 
+````
+
+## Device Output
+
+````
+Connecting to AP WiFi-SSiD
+Attempting to connect to 192.168.1.230
+Connected to MQTT! Subscribing...
+Publishing to funhouselightstate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
+Publishing to funhousestate
 ````

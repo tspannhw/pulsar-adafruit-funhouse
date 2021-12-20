@@ -200,3 +200,7 @@ Splits: 18 total, 18 done (100.00%)
 0:01 [87 rows, 36KB] [82 rows/s, 34.1KB/s]
 
 ````
+
+## Tweaking Python Code
+
+![MU](https://raw.githubusercontent.com/tspannhw/pulsar-adafruit-funhouse/main/mueditor.png)

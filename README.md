@@ -2,6 +2,16 @@
 
 AdaFruit Funhouse publishing Temperature, Humidity and Pressure to MQTT / Apache Pulsar
 
+## Device
+
+![Adafruit Funhouse](https://raw.githubusercontent.com/tspannhw/pulsar-adafruit-funhouse/main/IMG-6527.jpg)
+
+## Get your own from adafruit
+
+* Adafruit is a great company in NYC, I highly recommend you buy one or buy an ADABOX.   My daughter and I love these.
+
+* https://www.adafruit.com/product/4985
+
 
 ## Fork of adafruit Funhouse
 

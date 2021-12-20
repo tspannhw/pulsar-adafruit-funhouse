@@ -17,6 +17,8 @@ AdaFruit Funhouse publishing Temperature, Humidity and Pressure to MQTT / Apache
 
 * https://learn.adafruit.com/using-the-adafruit-funhouse-with-home-assistant/code-the-sensor
 
+I removed the mqtt consume, as I just want to produce data.   I also lowered the time down to 10 seconds to get more data.
+
 ## Apache Pulsar / MQTT Server Setup
 
 ````

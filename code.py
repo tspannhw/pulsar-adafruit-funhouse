@@ -9,7 +9,8 @@ import json
 from adafruit_display_shapes.circle import Circle
 from adafruit_funhouse import FunHouse
 
-PUBLISH_DELAY = 60
+PUBLISH_DELAY = 10
+# was 60, changed to 10 seconds
 ENVIRONMENT_CHECK_DELAY = 5
 ENABLE_PIR = True
 MQTT_TOPIC = "funhousestate"
